@@ -3,21 +3,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
 body {
   font-family: "josefin sans", sans-serif;
 }
 
 /*-----------------header--------------------- */
+
 header {
-  background-image: url(./Flower\ background.jpg);
-  height: 100vh;
+  background-image: url(./laptop.jpeg);
+  box-sizing: border-box;
+  
+  
 }
 
+@media (min-width:600px) and (max-width:800px) {
+  body{
+    background-color: aqua;
+  }
+}
 .logo {
   color: rgb(124, 19, 156);
   font-size: 50px;
 }
+
 .logo span{
     color: wheat;
 }
@@ -44,8 +53,30 @@ li a {
   font-size: 20px;
 }
 li a:hover {
-  color: rgb(255, 0, 191);
+  color: white;
 }
+.flexbox-container{
+  display: flex;
+  justify-content: center;
+  padding-left: 80%;
+}
+.flexbox-item{
+  width: 200px;
+  margin: 10px;
+  border: 3px;
+  flex-direction: row;
+}
+
+.flexbox-center{
+  min-height: 200px;
+  flex-grow: 2;
+  align-self: center;
+  padding: 20px;
+  position: relative;
+  top: 20px;
+  left: 80px;
+}
+
 
 .head-container {
   width: 100%;
@@ -63,11 +94,11 @@ li a:hover {
 }
 
 .head-para {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 h4{
-    color: rgb(145, 141, 141);
+    color: white;
     font-size: 40px;
 }
 h1{
@@ -76,10 +107,11 @@ h1{
   font-size: 70px;
 }
 h1 span{
-    color:rgb(150, 18, 110) ;
+    color: blue ;
 }
 p {
-  color: rgb(194, 185, 185);
+  color: white;
+  font-size: 30px;
 }
 
 
@@ -96,10 +128,14 @@ p {
 }
 
 .head-btn:hover {
-  background-color: gold;
+  background-color: rgb(39, 25, 224);
   color: white;
 }
 
+.icons{
+  color: blue;
+  font-size: 30px;
+}
 /* -------------------- about-me-section ---------------------------*/
 
 .about-me {
@@ -107,12 +143,15 @@ p {
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
+  
+
 }
 h2 {
   text-align: center;
   font-size: 50px;
   margin-top: 5%;
-  text-decoration: underline;
+  text-decoration: none;
+  color: blue;
 }
 .about-me-section {
   display: flex;
@@ -129,65 +168,73 @@ h2 {
 .about-para {
   color: rgb(8, 8, 8);
   font-size: 20px;
+  border: 50px;
 }
 
 .my image{
-  width: 40%;
+  width: 200%;
   border: radius 300px; 
   left: 60%;
   top: 25%;
-  bottom: 70%;
+  bottom: 50%;
+  padding-right: 200%;
+
+}
+.icons-facebook{
+  color:white
 }
 
 /* -------------------- skills ---------------------------*/
 .stacks {
-  background-color: rgb(116, 87, 87);
+  background-color: black;
   height: 100vh;
 }
   
-.skill-head {
+.skill-head{
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     margin-top: 5%;
-    text-decoration: underline;
-    color: white;
+    text-decoration:none;
+    color: red;
     padding-top: 5%;
+    border-radius: 50px;
+
 }
   
 .skill-container {
-    width: 100%;
+    width: 100vh;
     max-width: 80%;
     margin: 0 auto;
     margin-top: 10%;
+
 }
   
   .skill-one {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 20%;
+    border-radius: 20px;
+    padding-bottom: 50%;
+    text-decoration: dotted;
 }
 .skill-two {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 5%;
+    padding-left: 20%;
+    padding-bottom: 100%;
+  
+  
 }
   
 .skill-para {
     font-size:70px;
-}
-  
-.skill-dash {
-    width: 20%;
+    border: 200px;
+    border-radius: 200px;
     color: white;
-    border: 1px white solid;
 }
-  
-  .img-skill {
-    border-radius: 20%;
-    width: 10%;
-}
-  
   
 .icons {
     cursor: pointer;
@@ -205,6 +252,7 @@ h2 {
     align-items: center;
     justify-content: space-between;
     margin-top: 3%;
+    color: rgb(59, 56, 53);
   }
   
   .get-in-touch-head {
@@ -219,13 +267,16 @@ h2 {
     width: 100%;
     max-width: 50%;
     margin: 0 auto;
-    background-color: black;
+    background-color: rgb(29, 20, 110);
     margin-top: 5%;
+    border-radius: 70px;
   }
   
   .contact-p {
-    color: black;
+    color: rgb(10, 10, 10);
     margin-top: 3%;
+    align-items: center;
+    font-size: medium;
   }
   
   form {
@@ -269,13 +320,13 @@ h2 {
   }
   
   .form-btn:hover {
-    background-color: gold;
-    color: white;
+    background-color: black;
+    color: rgba(172, 20, 20, 0.589);
   }
   
   footer {
-    background-color: black;
-    height: 20vh;
+    background-color: rgb(6, 6, 8);
+    height: 10vh;
     margin-top: 10%;
   }
   
@@ -289,15 +340,18 @@ h2 {
     padding-top: 3%;
   }
   
-  .footer-icons {
+.icons {
     display: flex;
     align-items: center;
     gap: 4%;
     font-size: 70px;
   }
-  
-.contact-header{
-    color: yellow;
+.copyright{
+    color: white;
+    font-size: 20px;
+    align-items: center;
   }
-  
+.copyright :hover{
+  color: red;
 }
+  

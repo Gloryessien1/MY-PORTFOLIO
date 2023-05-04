@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap" rel="stylesheet">
-    <title>portfolio</title>
+    <title> flexbox portfolio</title>
 </head>
 <body><body>
     <!------------------------------ header --------------------------->
@@ -18,19 +18,29 @@
         <div class="logo">G<span>SE</span></div>
         <ul>
           <li><a href="#">HOME</a></li>
-          <li><a href="#"> ABOUT ME </a></li>
-          <li><a href="#"> SKILLS </a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#about"> ABOUT ME </a></li>
+          <li><a href="#myskills"> SKILLS </a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
-
+      <div class="flexbox-container"></div>
+        <div class="flexbox-item">
+          <div class="flexbox-left">
+            <img src="./glory's image.jpeg">
+          </div>
+        </div>
+      </div>
       <div class="head-container">
         <div class="head-title">
           <h4> Hello, I am Glory Stephen</h4>
           <h1 class="head-para"><span>Fro</span>nt-end Devel<span>oper</span></h1>
           <p>I create Websites and also help businesses grow online.</p>
           <button class="head-btn">Hire Me</button>
-          <div class="icon">
+      </div>
+      <div class="icon-facebook">
+
+      </div>
+     
     <a href="https://web.facebook.com/essien.glorystephen1" target="_blank">
             <i class="fa-brands fa-facebook"></i>
     </a>
@@ -41,23 +51,23 @@
     <a href="https://www.linkedin.com/in/glory-stephen-essien-72916317b/" target="_blank">
                 <i class="fa-brands fa-linkedin"></i>
     </a>
-
-        </div>
+  </div>
+  </div>
       </div>
     </header>
 
     <!---------------------- About me ----------------------->
     <section class="about-me">
-      <h2>About Me</h2>
+      <h2 id="about">About Me</h2>
       <div class="about-me-section">
         <div class="about-text">
           <p class="about-para">
-            I am a front-end developerand a social media manager
+            I am a front-end developer and a social media manager
              based in nasarawa state. 
             This is my first official website.
              I specialize in HTML AND CSS.
-             My dream and aspirations has always been to delv
-             e into tech and TIIDELab gave me the opportuinity.
+             My dream and aspirations has always been to delve 
+             into tech and TIIDELab gave me the opportuinity.
              In TIIDELab prefellowship, we were not only taught
              coding. One thing that would forever be in me is the 
              team building and personal branding lectures taught by 
@@ -77,14 +87,11 @@
 
       <div class="skill-container">
         <div class="skill-one">
-          <p class="skill-para">HTML</p>
-          <div class="skill-dash"></div>
-          <img src="html.png" alt="" class="img-skill" />
+          <p class="skill-para">HTML<br>CSS</p>
         </div>
         <div class="skill-two">
           <p class="skill-para">CSS</p>
-          <div class="skill-dash"></div>
-          <img src="css.png" alt="" class="img-skill" />
+          <div class="skill-dash">
         </div>
       </div>
     </section>
@@ -95,19 +102,13 @@
       <h2>You Want to Talk To Me?</h2>
 
       <div class="contact-container">
-        <div class="get-in-touch-head">
-          <h3>CONTACT ME</h3>
-        </div>
-
-        <div class="get-in-touch-para">
           <p class="contact-p">
             Hey, are you looking for someone to talk to? 
             Are you curious of knowing more about tech?.
             Then you are at the right place, 
             because i am here to answer all your problems.
-            Fill the form bellow for quick response.
+            Fill the form below for quick response.
           </p>
-        </div>
       </div>
 
       <div class="form-container">
@@ -132,8 +133,8 @@
 
     <footer>
       <div class="footer-container">
-        <div class="logo">G<span>SE</span></div>
-        <ul class="footer-logo">
+        <div class=" footer.logo">G<span>SE</span></div>
+        <div class="copyright"><h6>copyright@Glory Stephen Essien</h6></div>
         <div class="icon">
             <a href="https://web.facebook.com/essien.glorystephen1" target="_blank">
                 <i class="fa-brands fa-facebook" style="color: blue;"></i>
@@ -143,11 +144,12 @@
             </a>
                 <i class="fa-brands fa-instagram"></i>
              <a href="https://www.linkedin.com/in/glory-stephen-essien-72916317b/" target="_blank">
-                <i class="fa-brands fa-linkedin" style="color: red;"></i>
+                <i class="fa-brands fa-linkedin" style="color: blue;"></i>
             </a>
              </div>
         </div>
       </div>
     </footer>
+     </div>
 </body>
 </html>
